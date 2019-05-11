@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{87319FF8-CD5F-383F-B0D3-BC1C3BF2B61E}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\AntTweakBar-1.16\include;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\glfw-3.1.2\include;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\glm-0.9.7.1;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\glew-1.13.0\include;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\assimp-3.0.1270\include;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\AntTweakBar-1.16\include;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\glfw-3.1.2\include;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\glm-0.9.7.1;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\glew-1.13.0\include;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\assimp-3.0.1270\include;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\AntTweakBar-1.16\include;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\glfw-3.1.2\include;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\glm-0.9.7.1;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\glew-1.13.0\include;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\assimp-3.0.1270\include;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\AntTweakBar-1.16\include;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\glfw-3.1.2\include;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\glm-0.9.7.1;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\glew-1.13.0\include;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\assimp-3.0.1270\include;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\bullet-2.81-rev2613\src;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/neoge_nb4nkvy/Documents/opengl/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/neoge_nb4nkvy/Documents/opengl/ogl-master -BC:/Users/neoge_nb4nkvy/Documents/opengl --check-stamp-file C:/Users/neoge_nb4nkvy/Documents/opengl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/neoge_nb4nkvy/Documents/opengl/ogl-master/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\3.14.3\CMakeCXXCompiler.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\CMakeLists.txt;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/neoge_nb4nkvy/Documents/opengl/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/neoge_nb4nkvy/Documents/opengl/ogl-master -BC:/Users/neoge_nb4nkvy/Documents/opengl --check-stamp-file C:/Users/neoge_nb4nkvy/Documents/opengl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/neoge_nb4nkvy/Documents/opengl/ogl-master/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\3.14.3\CMakeCXXCompiler.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\CMakeLists.txt;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/neoge_nb4nkvy/Documents/opengl/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/neoge_nb4nkvy/Documents/opengl/ogl-master -BC:/Users/neoge_nb4nkvy/Documents/opengl --check-stamp-file C:/Users/neoge_nb4nkvy/Documents/opengl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/neoge_nb4nkvy/Documents/opengl/ogl-master/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\3.14.3\CMakeCXXCompiler.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\CMakeLists.txt;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/neoge_nb4nkvy/Documents/opengl/ogl-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/neoge_nb4nkvy/Documents/opengl/ogl-master -BC:/Users/neoge_nb4nkvy/Documents/opengl --check-stamp-file C:/Users/neoge_nb4nkvy/Documents/opengl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/neoge_nb4nkvy/Documents/opengl/ogl-master/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\3.14.3\CMakeCXXCompiler.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\CMakeLists.txt;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\CleanDirectoryList.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\CreateLaunchers.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\ListCombinations.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\MSVCMultipleProcessCompile.cmake;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\targetlauncher.cmd.in;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\external\rpavlik-cmake-modules-fe2273\launcher-templates\vcxproj.user.in;C:\Users\neoge_nb4nkvy\Documents\opengl\ogl-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\neoge_nb4nkvy\Documents\opengl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\ZERO_CHECK.vcxproj">
+      <Project>{FB14227F-3770-376E-94B4-08506C02B5C9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\ANTTWEAKBAR_116_OGLCORE_GLFW.vcxproj">
+      <Project>{EE838211-40BC-3827-8C5B-71C4754988F2}</Project>
+      <Name>ANTTWEAKBAR_116_OGLCORE_GLFW</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\bullet-2.81-rev2613\src\BulletCollision\BulletCollision.vcxproj">
+      <Project>{E0542D5B-D303-3BA3-BD9E-746F5343CDCC}</Project>
+      <Name>BulletCollision</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\bullet-2.81-rev2613\src\BulletDynamics\BulletDynamics.vcxproj">
+      <Project>{5217341D-4C31-35F6-BB9E-BFF2C228CBB4}</Project>
+      <Name>BulletDynamics</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\bullet-2.81-rev2613\src\BulletSoftBody\BulletSoftBody.vcxproj">
+      <Project>{CD86ED75-FEA8-37C6-A20B-FE82FBD110F4}</Project>
+      <Name>BulletSoftBody</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\GLEW_1130.vcxproj">
+      <Project>{952CDBCD-5DB6-384E-9277-6F0113A4ACF6}</Project>
+      <Name>GLEW_1130</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\bullet-2.81-rev2613\src\LinearMath\LinearMath.vcxproj">
+      <Project>{86C24598-E947-3224-9CF2-A4CC02396E20}</Project>
+      <Name>LinearMath</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\assimp-3.0.1270\code\assimp.vcxproj">
+      <Project>{3C801135-860E-310C-930A-72F4983B8DFB}</Project>
+      <Name>assimp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\examples\boing.vcxproj">
+      <Project>{6F9D3D86-EEB6-3EF6-BF9C-50D0D447C605}</Project>
+      <Name>boing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\tests\clipboard.vcxproj">
+      <Project>{02800095-6C3A-3774-B118-3101B6DDD4C4}</Project>
+      <Name>clipboard</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\tests\cursor.vcxproj">
+      <Project>{C73F512C-FFA4-3B0A-970D-987149A7037D}</Project>
+      <Name>cursor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\tests\empty.vcxproj">
+      <Project>{D19CD04B-F8E9-353B-A954-531D0E489FB8}</Project>
+      <Name>empty</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\tests\events.vcxproj">
+      <Project>{FE551776-9A82-34E0-85F1-418AA1CE1803}</Project>
+      <Name>events</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\tests\gamma.vcxproj">
+      <Project>{B1D2F9F2-235C-33EF-8C09-505359415DC3}</Project>
+      <Name>gamma</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\examples\gears.vcxproj">
+      <Project>{E1D8840E-E0F3-3C56-8AC0-5F5B10E34079}</Project>
+      <Name>gears</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\src\glfw.vcxproj">
+      <Project>{DF46AAAE-9463-3C9D-8A14-A4759050D86E}</Project>
+      <Name>glfw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\tests\glfwinfo.vcxproj">
+      <Project>{0F683B6C-853F-3A33-B8EB-7E2739BC0243}</Project>
+      <Name>glfwinfo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\examples\heightmap.vcxproj">
+      <Project>{31264094-FF15-3046-84CE-184DBBD18D9D}</Project>
+      <Name>heightmap</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\tests\iconify.vcxproj">
+      <Project>{9EDD30C0-F528-39EA-B390-0EF7BFE46285}</Project>
+      <Name>iconify</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\tests\joysticks.vcxproj">
+      <Project>{CF020319-183F-3C58-81DD-F7CF3498D083}</Project>
+      <Name>joysticks</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\misc05_picking_BulletPhysics.vcxproj">
+      <Project>{8FA6246D-9B56-3509-B9AE-2EEAB663352B}</Project>
+      <Name>misc05_picking_BulletPhysics</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\misc05_picking_custom.vcxproj">
+      <Project>{2FCF777E-99AA-3B90-83AE-E652906652F5}</Project>
+      <Name>misc05_picking_custom</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\misc05_picking_slow_easy.vcxproj">
+      <Project>{E6E63186-C427-3E9C-86AC-435B23FCA9F4}</Project>
+      <Name>misc05_picking_slow_easy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\tests\monitors.vcxproj">
+      <Project>{A75E1051-A73B-3542-828D-246C5DC10A18}</Project>
+      <Name>monitors</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\tests\msaa.vcxproj">
+      <Project>{D568B73B-26F2-3477-8ACD-EBFBD1F59C3C}</Project>
+      <Name>msaa</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\examples\particles.vcxproj">
+      <Project>{FDA37CF2-B5AF-329D-B339-26D87795E1D9}</Project>
+      <Name>particles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\playground.vcxproj">
+      <Project>{22A025B2-F724-3827-990B-449E37B64AF4}</Project>
+      <Name>playground</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\tests\reopen.vcxproj">
+      <Project>{AB18581B-DC64-3D3A-8EA8-8BB0884624C7}</Project>
+      <Name>reopen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\tests\sharing.vcxproj">
+      <Project>{4232C828-96AE-35F4-AACC-DEE6B773D30B}</Project>
+      <Name>sharing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\examples\simple.vcxproj">
+      <Project>{870DC15A-10A3-3AD2-BB2B-06032551BDB6}</Project>
+      <Name>simple</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\examples\splitview.vcxproj">
+      <Project>{1583136C-A3A5-37E8-A749-1BA31C66E593}</Project>
+      <Name>splitview</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\tests\tearing.vcxproj">
+      <Project>{4BE2BAE5-A6E8-352F-9C2F-ABF426DD5DE8}</Project>
+      <Name>tearing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\tests\threads.vcxproj">
+      <Project>{66934EFB-38E4-3AB8-A2B3-C9CD5AF8BD54}</Project>
+      <Name>threads</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\tests\title.vcxproj">
+      <Project>{0E4756E1-5EC4-31DB-A4CB-80964F1D1037}</Project>
+      <Name>title</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial01_first_window.vcxproj">
+      <Project>{CEC72A7C-B021-3CCF-99FC-F87A0D4E07B6}</Project>
+      <Name>tutorial01_first_window</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial02_red_triangle.vcxproj">
+      <Project>{291D15B9-D75D-3B33-8849-24515F52087F}</Project>
+      <Name>tutorial02_red_triangle</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial03_matrices.vcxproj">
+      <Project>{C6D8B829-9E44-395D-AFDA-C30D70EA802C}</Project>
+      <Name>tutorial03_matrices</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial04_colored_cube.vcxproj">
+      <Project>{2F1D58BC-B876-3F88-A90A-22ADA140FCD1}</Project>
+      <Name>tutorial04_colored_cube</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial05_textured_cube.vcxproj">
+      <Project>{4A2BF109-FB21-32DC-94A6-FD43EA66690A}</Project>
+      <Name>tutorial05_textured_cube</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial06_keyboard_and_mouse.vcxproj">
+      <Project>{28DF800C-ACAB-3C72-8F37-1517DCBB29D1}</Project>
+      <Name>tutorial06_keyboard_and_mouse</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial07_model_loading.vcxproj">
+      <Project>{4F76696C-0642-326F-8BCF-8833C5467694}</Project>
+      <Name>tutorial07_model_loading</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial08_basic_shading.vcxproj">
+      <Project>{7C988F64-F655-3F8D-9FA6-7E67FB49B02A}</Project>
+      <Name>tutorial08_basic_shading</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial09_AssImp.vcxproj">
+      <Project>{4C325A72-E4F6-360E-BF34-F5C12BE6EC93}</Project>
+      <Name>tutorial09_AssImp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial09_several_objects.vcxproj">
+      <Project>{4A483918-F0DA-31A2-B12C-BAD02A5AE31A}</Project>
+      <Name>tutorial09_several_objects</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial09_vbo_indexing.vcxproj">
+      <Project>{8B43C934-0952-3850-BCA2-E3BF543867D7}</Project>
+      <Name>tutorial09_vbo_indexing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial10_transparency.vcxproj">
+      <Project>{D2D952EA-30B7-3BCB-9FF5-95A4980AC26E}</Project>
+      <Name>tutorial10_transparency</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial11_2d_fonts.vcxproj">
+      <Project>{23A73CF1-FB87-3F0E-AB31-889A77E4097D}</Project>
+      <Name>tutorial11_2d_fonts</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial12_extensions.vcxproj">
+      <Project>{DEFD5BDC-DF90-35CA-A8EB-D53CC2C82B02}</Project>
+      <Name>tutorial12_extensions</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial13_normal_mapping.vcxproj">
+      <Project>{F04C553A-4B11-3BB0-A11A-6605109B6F76}</Project>
+      <Name>tutorial13_normal_mapping</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial14_render_to_texture.vcxproj">
+      <Project>{CC790550-F216-31BB-9535-FC896D140B83}</Project>
+      <Name>tutorial14_render_to_texture</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial15_lightmaps.vcxproj">
+      <Project>{C1114EFF-8D1E-3557-A8F1-59A386DA0333}</Project>
+      <Name>tutorial15_lightmaps</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial16_shadowmaps.vcxproj">
+      <Project>{DC0AA8CE-ECAA-3FD4-ABB3-09B454630B65}</Project>
+      <Name>tutorial16_shadowmaps</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial16_shadowmaps_simple.vcxproj">
+      <Project>{6FF3FCA1-391E-378A-88E4-6DBFE27CFAF4}</Project>
+      <Name>tutorial16_shadowmaps_simple</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial17_rotations.vcxproj">
+      <Project>{81631CC2-E565-3573-93EA-85BCBDC402AE}</Project>
+      <Name>tutorial17_rotations</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial18_billboards.vcxproj">
+      <Project>{64D1C493-CF31-3AD6-9026-C60B6570808D}</Project>
+      <Name>tutorial18_billboards</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\tutorial18_particles.vcxproj">
+      <Project>{85F800AD-0A86-3E49-863F-B9BD74DB5B0A}</Project>
+      <Name>tutorial18_particles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\examples\wave.vcxproj">
+      <Project>{694E15CB-29CE-3A55-889E-176853814964}</Project>
+      <Name>wave</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\glfw-3.1.2\tests\windows.vcxproj">
+      <Project>{5B8B2C79-2B60-3F75-BD6F-8FE19D2F762D}</Project>
+      <Name>windows</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\neoge_nb4nkvy\Documents\opengl\external\assimp-3.0.1270\contrib\zlib\zlib.vcxproj">
+      <Project>{9B175B72-8B69-3F31-B72D-DB0061D10D72}</Project>
+      <Name>zlib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
